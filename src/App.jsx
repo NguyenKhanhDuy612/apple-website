@@ -1,8 +1,11 @@
+import { ThemeProvider } from './components/contexts/ThemeContext';
 import AppRouter from './components/routers/AppRouter';
 const App = () => {
     return (
         <>
-            <AppRouter />
+            <ThemeProvider>
+                <AppRouter />
+            </ThemeProvider>
         </>
     );
 };

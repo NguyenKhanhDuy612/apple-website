@@ -4,6 +4,7 @@ import { PlaynavChangeSound, themeModeChange } from '../utlis/soundsPlaying';
 import { useEffect, useState } from 'react';
 import { Button } from '../ui/button';
 import { useTheme } from '../contexts/ThemeContext';
+import { Moon, Sun } from 'lucide-react';
 
 export default function Navbar() {
     const [showCursor, setShowCursor] = useState(false);
@@ -61,8 +62,8 @@ export default function Navbar() {
                         }}
                         aria-label="Toggle theme"
                     >
-                        {/* <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                        <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" /> */}
+                        <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                        <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                     </Button>
 
                     {/* For Mobile Menu  */}
