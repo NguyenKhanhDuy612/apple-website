@@ -26,7 +26,7 @@ export default function Navbar() {
                 >
                     <span className="font-bold text-orange-400 text-xl overflow-hidden text-nowrap text-ellipsis ">
                         ~{location.pathname}
-                        {showCursor && <span className="">|</span>}
+                        {/* {showCursor && <span className="">|</span>} */}
                     </span>
                 </Link>
 

@@ -1,5 +1,4 @@
-import About from '../pages/About/About';
-import Home from '../pages/Home/Home';
+import { About, Home } from '../pages';
 import MainLayout from './../layouts/MainLayout';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
