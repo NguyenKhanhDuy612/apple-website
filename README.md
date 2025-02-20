@@ -18,3 +18,5 @@ npm install clsx tailwind-merge
 npm install @radix-ui/react-slot
 npm install class-variance-authority
 npm install lucide-react
+
+npm install @radix-ui/react-dialog  //bảng tùy biến (sheets) trong các ứng dụng React

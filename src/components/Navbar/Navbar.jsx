@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { Button } from '../ui/button';
 import { useTheme } from '../contexts/ThemeContext';
 import { Moon, Sun } from 'lucide-react';
+import MobileNavbar from './MobileNavbar';
 
 export default function Navbar() {
     const [showCursor, setShowCursor] = useState(false);
@@ -52,7 +53,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-end space-x-2">
                     {/* <SubNavbar /> */}
 
-                    <Button
+                    {/* <Button
                         variant="ghost"
                         size="icon"
                         className="h-9 w-9 rounded-3xl hover:border-orange-400 border-2 transform transition-transform duration-700 ease-in-out hover:rotate-180 bg-gray-300 dark:bg-orange-800 "
@@ -64,10 +65,10 @@ export default function Navbar() {
                     >
                         <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                         <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                    </Button>
+                    </Button> */}
 
                     {/* For Mobile Menu  */}
-                    {/* <MobileNavBar routesName={routesName} /> */}
+                    <MobileNavbar routesName={routesName} />
                 </div>
             </div>
         </header>
