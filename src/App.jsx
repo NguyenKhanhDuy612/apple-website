@@ -5,7 +5,7 @@ const App = () => {
         <>
             <ThemeProvider>
                 <AppRouter />
-            </ThemeProvider>
+            </ThemeProvider> 
         </>
     );
 };
