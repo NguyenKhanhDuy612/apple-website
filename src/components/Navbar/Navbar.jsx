@@ -39,7 +39,7 @@ export default function Navbar() {
                             onClick={() => {
                                 PlaynavChangeSound();
                             }}
-                            className={`transition-colors hover:rounded-md hover:border-b-2 hover:border-orange-400 hover:text-foreground/80 hover:bg-accent px-4 py-2  text-black dark:text-white  ${
+                            className={`transition-colors hover:rounded-md hover:border-b-2 hover:border-orange-400 hover:text-foreground/80 hover:bg-accent px-4 py-2  ${
                                 location.pathname === route.href
                                     ? ' border-b-2 border-red-400 bg-accent rounded-md text-accent-foreground'
                                     : 'text-foreground/60'
@@ -53,7 +53,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-end space-x-2">
                     {/* <SubNavbar /> */}
 
-                    {/* <Button
+                    <Button
                         variant="ghost"
                         size="icon"
                         className="h-9 w-9 rounded-3xl hover:border-orange-400 border-2 transform transition-transform duration-700 ease-in-out hover:rotate-180 bg-gray-300 dark:bg-orange-800 "
@@ -65,7 +65,7 @@ export default function Navbar() {
                     >
                         <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                         <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                    </Button> */}
+                    </Button>
 
                     {/* For Mobile Menu  */}
                     <MobileNavbar routesName={routesName} />
